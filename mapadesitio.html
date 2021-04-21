@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <title>Mapa de la web TRP</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <meta name="keywords" content="mapa,sitio,pagina,">
+
+</head>
+<body>
+<!--Menu-->
+<div class="encabezado-de-pagina">
+    <img src="media/logo.png" alt="logo trp" class="encabezado-de-pagina__logo-pagina">&nbsp;&nbsp;
+    <ul class="menu-encabezado alinearGrid">
+        <li><a href="redes.html">Redes</a></li>
+        <li><a href="streams.html">Streams</a></li>
+        <li><a href="juegos.html">juegos</a></li>
+        <li><a href="integrantes.html">Integrantes</a>
+            <ul class="integrantes">
+                <li><a href="integrantes.html">DraxtoS</a></li>
+                <li><a href="integrantes.html">Aylencita</a></li>
+                <li><a href="integrantes.html">Princess_nuala</a></li>
+                <li><a href="integrantes.html">DiegoGunner</a></li>
+            </ul>
+    </ul>
+    <t class="encabezado-de-pagina__trp-grande">T.R.P. TEAM</t>
+    </div>
+<div class="flexColumnaIzquierda">
+<h1>Bienvenidos al mapa del sitio</h1><br>
+    <h2>Menu</h2>
+        <dl class="lista-mapa">
+            <dt class="lista-mapa__int"><a href="integrantes.html">integrantes</a></dt>
+            <dd class="lista-mapa__inf-int">Informacion de cada uno de los integrantes</dd>
+            <dt class="lista-mapa__str"><a href="streams.html">Streams</a></dt>
+            <dd class="lista-mapa__inf-str">Horarios y Lugares donde ver los streams de los diferentes integrantes</dd>
+            <dt class="lista-mapa__jue"><a href="juegos.html">Juegos</a></dt>
+            <dd class="lista-mapa__inf-jue">Juegos que se ven en los streams, como tambien juegos pasados y que se veran en un futuro</dd>
+            <dt class="lista-mapa__red"><a href="redes.html">Redes</a></dt>
+            <dd class="lista-mapa__inf-red">Redes Sociales de cada uno de los integrantes para estar en contacto y saber cuando prenden , sorteos , memes</dd>
+        </dl><br>
+    <h2>Multimedia</h2>
+        <p><a href="galeria.html">Galeria</a></p> <br>
+    <h2>Otros</h2>
+        <dl class="linfo">
+            <dt class="linfo__inf"><a href="informacion.html">Información</a> </dt>
+            <dd class="linfo__inf-inf">Conoce mas sobre nosotros</dd>
+        </dl>
+</div>
+
+<br><br>
+
+<footer>
+
+<!--pie de pagina-->
+<div class="pie-de-pagina" > 
+    <a href="informacion.html" class="pie-de-pagina__informacion">Información</a> <br>
+    <a href="Mapadesitio.html"class="pie-de-pagina__mapa">Mapa del sitio</a><br>
+<!-- Modal Mail -->
+    <t data-toggle="modal" data-target="#myModal" class="pie-de-pagina__mail">Mail de contacto</t> <br>
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">    
+                <div class="modal-header">
+                    <h4 class="modal-title">Ponte en contacto con nosotros</h4>
+                    <button type="button" class="close" data-dismiss="modal" id="botonClose">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <legend>Informacion personal</legend>
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Nombre</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Apellido</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese su apellido">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Mail</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Ingrese su mail">
+                        </div>
+                    </fieldset>
+                    </form>
+<!--texto a enviarnos-->
+                    <form>
+                        <p>¿Que le gustaria decirnos?</p>
+                        <textarea rows="5" cols="35"></textarea><br><br>
+                        <input type="submit" value="Enviar comentario" />
+                        <input type="reset" value="Borrar Comentario" />
+                    </form><br><br>
+                </div>    
+            </div>
+        </div>
+    </div>
+<!-- Modal recomendaciones -->
+<t data-toggle="modal" data-target="#myModal2" class="pie-de-pagina__recomendaciones">Recomendaciones</t>
+<div class="modal fade" id="myModal2">
+    <div class="modal-dialog">
+        <div class="modal-content">    
+            <div class="modal-header">
+                <h4 class="modal-title">Que te gustaria Recomendarnos?</h4>
+                <button type="button" class="close" data-dismiss="modal" id="botonClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <label for="nombre">Nombre:</label>
+                    <input type="name" nombre="nombre"/><br><br>
+                    <P>Escribinos tu Recomendacion</P>
+                    <textarea rows="5" cols="35"></textarea><br><br>
+                    <input type="submit" value="Enviar sugerencia">
+                    <input type="reset" value="Borrar sugerencia">
+                </form>
+            </div>    
+        </div>
+    </div>
+</div>
+<img src="media/mail.png" class="pie-de-pagina__icono-mail">
+<img src="media/info.png" class="pie-de-pagina__icono-info">
+<img src="media/reco.png" class="pie-de-pagina__icono-reco">
+<img src="media/mapa.png" class="pie-de-pagina__icono-mapa">
+<t class="pie-de-pagina__slogan alinearGridCentro">NUNCA DESAFIES A UN TRP SI TU INTENCION ES SALIR VICTORIOSO DE ESE CAMPO DE BATALLA</t>
+</div>
+<a href="index.html" alt="logo trp"><img src="media/logo.png" class="logo-dos"></a>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+</body>
+</html>
