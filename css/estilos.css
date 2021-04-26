@@ -455,7 +455,7 @@ body {
     position: relative;
     color: snow;
     bottom: 50px;
-    right: 800px;
+    right: 600px;
     cursor: pointer;
     border: 5px solid;
     border-color: snow;
@@ -663,23 +663,29 @@ body {
   .streams .aylencita .aylencita__info {
     color: snow; }
 
-.banner {
+#con .banner {
   width: 100%;
   display: grid;
   grid-template-areas: "igtrp ytbtrp" "bannerDrax bannerDiego" "bannerAylen bannerPrincess";
   grid-template-rows: 270px 1fr 1fr;
   grid-template-columns: 1fr 1fr; }
-  .banner .banner__bdrax {
-    grid-area: bannerDrax; }
-  .banner .banner__bdiego {
-    grid-area: bannerDiego; }
-  .banner .banner__baylen {
-    grid-area: bannerAylen; }
-  .banner .banner__bprincess {
-    grid-area: bannerPrincess; }
-  .banner .banner__igtrp {
-    grid-area: igtrp; }
-  .banner .banner__ytbtrp {
+  #con .banner .banner__bdrax {
+    grid-area: bannerDrax;
+    width: 100%; }
+  #con .banner .banner__bdiego {
+    grid-area: bannerDiego;
+    width: 100%; }
+  #con .banner .banner__baylen {
+    grid-area: bannerAylen;
+    width: 100%; }
+  #con .banner .banner__bprincess {
+    grid-area: bannerPrincess;
+    width: 100%; }
+  #con .banner .banner__igtrp {
+    grid-area: igtrp;
+    width: 100%; }
+  #con .banner .banner__ytbtrp {
+    width: 100%;
     grid-area: ytbtrp; }
 
 /*portatil*/
@@ -817,29 +823,30 @@ body {
     line-height: normal;
     outline-offset: 2px;
     font-size: 25px; }
-  .banner {
-    display: grid inline-block;
+  #cont .banner {
+    width: 100%;
+    display: grid;
     grid-template-areas: "igtrp ytbtrp" "bannerDrax bannerDiego" "bannerAylen bannerPrincess";
     grid-template-rows: 135px 1fr 1fr;
     grid-template-columns: 1fr 1fr; }
-    .banner .banner__bdrax {
+    #cont .banner .banner__bdrax {
       grid-area: bannerDrax;
-      width: 512px; }
-    .banner .banner__bdiego {
+      width: 100%; }
+    #cont .banner .banner__bdiego {
       grid-area: bannerDiego;
-      width: 512px; }
-    .banner .banner__baylen {
+      width: 100%; }
+    #cont .banner .banner__baylen {
       grid-area: bannerAylen;
-      width: 512px; }
-    .banner .banner__bprincess {
+      width: 100%; }
+    #cont .banner .banner__bprincess {
       grid-area: bannerPrincess;
-      width: 512px; }
-    .banner .banner__igtrp {
+      width: 100%; }
+    #cont .banner .banner__igtrp {
       grid-area: igtrp;
-      width: 512px; }
-    .banner .banner__ytbtrp {
-      width: 512px;
-      grid-area: ytbtrp; } }
+      width: 100%; }
+    #cont .banner .banner__ytbtrp {
+      grid-area: ytbtrp;
+      width: 100%; } }
 
 /*tablet*/
 @media (max-width: 1024px) {
@@ -978,28 +985,35 @@ body {
     outline-offset: 2px;
     font-size: 20px; }
   .banner {
+    width: 100%;
     display: grid inline-block;
     grid-template-areas: "igtrp ytbtrp" "bannerDrax bannerDiego" "bannerAylen bannerPrincess";
     grid-template-rows: 135px 1fr 1fr;
     grid-template-columns: 1fr 1fr; }
     .banner .banner__bdrax {
       grid-area: bannerDrax;
-      width: 500px; }
+      width: 100%;
+      max-width: 500px; }
     .banner .banner__bdiego {
       grid-area: bannerDiego;
-      width: 500px; }
+      max-width: 500px;
+      width: 100%; }
     .banner .banner__baylen {
       grid-area: bannerAylen;
-      width: 500px; }
+      max-width: 500px;
+      width: 100%; }
     .banner .banner__bprincess {
       grid-area: bannerPrincess;
-      width: 500px; }
+      max-width: 500px;
+      width: 100%; }
     .banner .banner__igtrp {
       grid-area: igtrp;
-      width: 500px; }
+      max-width: 500px;
+      width: 100%; }
     .banner .banner__ytbtrp {
-      width: 500px;
-      grid-area: ytbtrp; } }
+      max-width: 500px;
+      grid-area: ytbtrp;
+      width: 100%; } }
 
 /*mobile*/
 @media (max-width: 768px) {
@@ -1135,29 +1149,36 @@ body {
     line-height: normal;
     outline-offset: 2px;
     font-size: 20px; }
-  .banner {
+  #con .banner {
+    width: 100%;
     display: grid inline-block;
     grid-template-areas: "igtrp ytbtrp" "bannerDrax bannerDiego" "bannerAylen bannerPrincess";
     grid-template-rows: 135px 1fr 1fr;
     grid-template-columns: 1fr 1fr; }
-    .banner .banner__bdrax {
+    #con .banner .banner__bdrax {
       grid-area: bannerDrax;
-      width: 340px; }
-    .banner .banner__bdiego {
+      width: 100%;
+      max-width: 340px; }
+    #con .banner .banner__bdiego {
       grid-area: bannerDiego;
-      width: 340px; }
-    .banner .banner__baylen {
+      width: 100%;
+      max-width: 340px; }
+    #con .banner .banner__baylen {
       grid-area: bannerAylen;
-      width: 340px; }
-    .banner .banner__bprincess {
+      width: 100%;
+      max-width: 340px; }
+    #con .banner .banner__bprincess {
       grid-area: bannerPrincess;
-      width: 340px; }
-    .banner .banner__igtrp {
+      width: 100%;
+      max-width: 340px; }
+    #con .banner .banner__igtrp {
       grid-area: igtrp;
-      width: 340px; }
-    .banner .banner__ytbtrp {
+      width: 100%;
+      max-width: 340px; }
+    #con .banner .banner__ytbtrp {
       width: 340px;
-      grid-area: ytbtrp; }
+      width: 100%;
+      max-width: 340px; }
   #botonClose {
     width: 30px;
     height: 30px;
