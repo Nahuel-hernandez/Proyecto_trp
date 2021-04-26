@@ -11,6 +11,8 @@ little1:yellow,
 outlast:darkgreen
 );
 
+
+
 @for $i from 1 through 5{
     h#{$i}
     {
@@ -21,7 +23,6 @@ outlast:darkgreen
 /* body */
     
 body{
-        
     background-image: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 42%, rgba(143,0,255,1) 100%);
     font-size: 120%;
     color:$fontcolor;
@@ -634,7 +635,7 @@ body{
         position: relative;
         color: $fontcolor;
         bottom: 50px;
-        right: 800px;
+        right: 600px;
         cursor: pointer;
         border: 5px solid;
         border-color: snow;
@@ -925,10 +926,13 @@ body{
     }
         
     }
+    
+    #con {
 
+    
     .banner{   
     width: 100%; 
-    display: grid;
+    display: grid ;
     grid-template-areas: 
     "igtrp ytbtrp"
     "bannerDrax bannerDiego"
@@ -939,39 +943,39 @@ body{
 
     .banner__bdrax{
         grid-area: bannerDrax;
-        
+        width: 100%;
     }
 
     .banner__bdiego{
         grid-area: bannerDiego;
-       
+        width: 100%;
     }
 
     .banner__baylen{
         grid-area: bannerAylen;
-        
+        width: 100%;
     }
 
     .banner__bprincess{
         grid-area: bannerPrincess;
-        
+        width: 100%;
     }
 
     .banner__igtrp{
         grid-area: igtrp;
         
-        
+        width: 100%;
     }
 
     .banner__ytbtrp{
-        
+        width: 100%;
         grid-area: ytbtrp;
     
     }
 
 }
 
-
+    }
 
 
 
@@ -1168,6 +1172,7 @@ p {
     
 }
 }
+
 /* Logo 2 */
 .logo-dos{
     width: 100px;
@@ -1197,9 +1202,12 @@ a.cuerpo-index__galeria{
     font-size: 25px;
 }
 
+#cont {
+
+
 .banner{   
-    
-    display: grid inline-block;
+    width: 100%;
+    display: grid ;
     grid-template-areas: 
     "igtrp ytbtrp"
     "bannerDrax bannerDiego"
@@ -1209,40 +1217,44 @@ a.cuerpo-index__galeria{
 
 .banner__bdrax{
     grid-area: bannerDrax;
-    width: 512px;
+    width: 100%;
+    
 }
 
 .banner__bdiego{
     grid-area: bannerDiego;
-    width: 512px;
+    width: 100%;
+    
 }
 
 .banner__baylen{
     grid-area: bannerAylen;
-    width: 512px;
+  
+   width: 100%;
 }
 
 .banner__bprincess{
     grid-area: bannerPrincess;
-    width: 512px;
+   
+    width: 100%;
 }
 
 .banner__igtrp{
     grid-area: igtrp;
-    width: 512px;
-    
+  
+    width: 100%;
 }
 
 .banner__ytbtrp{
-    width: 512px;
+    
     grid-area: ytbtrp;
+    width: 100%;
+}
+}
+}
+}    
 
-}
-}
-}
-    
-    
-    /*tablet*/
+/*tablet*/
     
     @media(max-width: 1024px){
         .encabezado-de-pagina
@@ -1452,7 +1464,7 @@ a.cuerpo-index__galeria{
 }
 
 .banner{   
-    
+    width: 100%;
     display: grid inline-block;
     grid-template-areas: 
     "igtrp ytbtrp"
@@ -1463,34 +1475,38 @@ a.cuerpo-index__galeria{
 
 .banner__bdrax{
     grid-area: bannerDrax;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
 }
 
 .banner__bdiego{
     grid-area: bannerDiego;
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
 }
 
 .banner__baylen{
     grid-area: bannerAylen;
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
 }
 
 .banner__bprincess{
     grid-area: bannerPrincess;
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
 }
 
 .banner__igtrp{
     grid-area: igtrp;
-    width: 500px;
-    
+    max-width: 500px;
+    width: 100%;
 }
 
 .banner__ytbtrp{
-    width: 500px;
+    max-width: 500px;
     grid-area: ytbtrp;
-
+    width: 100%;
 }
 }
 }
@@ -1702,8 +1718,11 @@ a.cuerpo-index__galeria{
     font-size: 20px;
 }
 
+#con{
+
+
 .banner{   
-    
+    width: 100%;
     display: grid inline-block;
     grid-template-areas: 
     "igtrp ytbtrp"
@@ -1714,35 +1733,41 @@ a.cuerpo-index__galeria{
 
 .banner__bdrax{
     grid-area: bannerDrax;
-    width: 340px;
+    width: 100%;
+    max-width: 340px;
 }
 
 .banner__bdiego{
     grid-area: bannerDiego;
-    width: 340px;
+    width: 100%;
+    max-width: 340px;
 }
 
 .banner__baylen{
     grid-area: bannerAylen;
-    width: 340px;
+    width: 100%;
+    max-width: 340px;
 }
 
 .banner__bprincess{
     grid-area: bannerPrincess;
-    width: 340px;
+    width: 100%;
+    max-width: 340px;
 }
 
 .banner__igtrp{
     grid-area: igtrp;
-    width: 340px;
-    
+    width: 100%;
+    max-width: 340px;
 }
 
 .banner__ytbtrp{
     width: 340px;
-    grid-area: ytbtrp;
-
+    width: 100%;
+    max-width: 340px;
 }
+}
+
 }
 #botonClose{
     width: 30px;
