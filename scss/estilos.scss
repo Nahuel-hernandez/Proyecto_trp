@@ -1800,4 +1800,299 @@ a.cuerpo-index__galeria{
         border-radius: 0;
         }
 
+} 
+
+
+/*mobile bajo*/
+    
+@media(max-width:690px){
+    
+    .encabezado-de-pagina
+    {
+        background-image: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 42%, rgba(143,0,255,1) 100%);
+        font-size: 10px;
+        height: 60px;
+        display: grid;
+        grid-template-areas: 
+        "logo menuu menuu trp trp trp";
+        grid-template-rows: 3fr;
+        grid-template-columns:20px 1fr 10fr;
+        font-family: 'Reenie Beanie', cursive;
+        
+        .encabezado-de-pagina__trp-grande{
+            font-size: 30px;
+            color: $fontcolor;
+            grid-area: trp;
+            animation-duration: 2s;
+            animation-name:titilar;
+            animation-iteration-count: infinite;
+            font-family: 'Reenie Beanie', cursive;
+        }
+        
+        .encabezado-de-pagina__logo-pagina {
+            width: 50px;
+            height:50px;
+            padding-right: 20px;
+            grid-area:logo;
+        }
+    
+        .menu-encabezado
+        {
+            grid-area:menuu;
+            position:relative;
+            list-style: none;
+            font-size: 10px; 
+            
+        
+        
+        li {
+            display: inline;
+            position:relative;
+            font-size: 10px;
+            }
+        .integrantes {
+            position: absolute;
+            left: 10px;
+            display: none;
+            background-image: linear-gradient(90deg, rgba(143,0,255,1) 0%, rgba(0,0,0,1) 42%, rgba(255,0,0,1) 100%);
+            z-index: 100;
+        
+        li {
+            display: block;
+        }
+                    }
+    
+    
+        li:hover .integrantes
+        {
+            display:block;
+        }
+        }
+    }
+
+
+
+.pie-de-pagina
+{
+background-image: linear-gradient(90deg, rgba(143,0,255,1) 0%, rgba(0,0,0,1) 42%, rgba(255,0,0,1) 100%);
+color: snow;
+height: 60px;
+font-size: 10px;
+display: grid;
+grid-template-areas: 
+"info informacion informacion informacion"
+"map mapa slogan logo-dos"
+"imail mail slogan logo-dos"
+"reco recomendaciones recomendaciones recomendaciones ";
+grid-template-columns:10px 1fr 2fr 1fr;
+grid-template-rows:10px 10px 10px 10px;
+font-family: 'Reenie Beanie', cursive;
+
+textarea{
+    background-color: rgb(31, 30, 30);
+border-color: snow;
+color: $fontcolor;
+font-family: 'Reenie Beanie', cursive;
+font-size: 10px;
+column-width: 1px;
+
+}
+
+
+input {
+    border-color: snow;
+    background-color: rgb(31, 30, 30);
+    color: $fontcolor;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 10px;
+}
+
+label{
+    font-size: 10px;
+    color:$fontcolor;
+}
+
+legend{
+    font-size: 10px;
+    color:$fontcolor;
+}
+
+
+.pie-de-pagina__icono-mail{
+    grid-area:imail;
+    width: 10px;
+    height:10px;
+}
+
+.pie-de-pagina__icono-info{
+    grid-area:info;
+    width: 10px;
+    height:10px;
+
+}
+
+.pie-de-pagina__icono-reco {
+    grid-area:reco;
+    width: 10px;
+    height:10px;
+}
+
+.pie-de-pagina__icono-mapa{
+    grid-area: map;
+    width: 10px;
+    height:10px;
+}
+
+.pie-de-pagina__informacion{
+    grid-area: informacion;
+    font-size: 10px;
+}
+
+.pie-de-pagina__mapa{
+    grid-area:mapa;
+    font-size: 10px;
+}
+
+.pie-de-pagina__mail{
+    grid-area:mail;
+    font-size: 10px;
+    text-decoration: underline;
+}
+
+.pie-de-pagina__recomendaciones{
+    grid-area: recomendaciones;
+    font-size: 10px;
+    text-decoration: underline;
+}
+
+.pie-de-pagina__slogan{
+    grid-area:slogan;
+    font-size: 10px;
+}
+
+
+
+
+a{
+color: $fontcolor;
+font-size: 10px;
+}
+
+p {
+color: $fontcolor;
+font-size: 10px;
+
+}
+}
+/* Logo 2 */
+.logo-dos{
+width: 40px;
+height:40px;
+position:fixed;
+right: 10px;
+bottom: 5px;
+grid-area: logo-dos;
+z-index: 100;
+transition: 3seg;            
+}
+
+a.cuerpo-index__galeria{
+display: inline-block;
+position: relative;
+color: $fontcolor;
+left: 5px;
+top: -20px;
+cursor: pointer;
+border: 1px;
+border-color: snow;
+background-color: black;
+padding: .375rem .75rem;
+border-radius: 50rem;
+line-height: normal;
+outline-offset: 2px;
+font-size: 10px;
+}
+
+#con{
+
+
+.banner{   
+width: 100%;
+display: grid inline-block;
+grid-template-areas: 
+"igtrp ytbtrp"
+"bannerDrax bannerDiego"
+"bannerAylen bannerPrincess";
+grid-template-rows: 135px 1fr 1fr;
+grid-template-columns:1fr 1fr;
+
+.banner__bdrax{
+grid-area: bannerDrax;
+width: 100%;
+max-width: 340px;
+}
+
+.banner__bdiego{
+grid-area: bannerDiego;
+width: 100%;
+max-width: 340px;
+}
+
+.banner__baylen{
+grid-area: bannerAylen;
+width: 100%;
+max-width: 340px;
+}
+
+.banner__bprincess{
+grid-area: bannerPrincess;
+width: 100%;
+max-width: 340px;
+}
+
+.banner__igtrp{
+grid-area: igtrp;
+width: 100%;
+max-width: 340px;
+}
+
+.banner__ytbtrp{
+width: 340px;
+width: 100%;
+max-width: 340px;
+}
+}
+
+}
+#botonClose{
+width: 20px;
+height: 20px;
+font-size: 10px;
+color: $fontcolor;
+background-color: rgb(31,30,30);   
+}
+
+.modal-fullscreen-md-down {
+    width: 80%;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+    }
+    .modal-fullscreen-md-down .modal-content {
+    height: 80%;
+    width: 80%;
+    border: 0;
+    border-radius: 0;
+    }
+    .modal-fullscreen-md-down .modal-header {
+    border-radius: 0;
+    }
+    .modal-fullscreen-md-down .modal-body {
+    overflow-y: auto;
+    width: 50%;
+    }
+    .modal-fullscreen-md-down .modal-footer {
+    border-radius: 0;
+    }
+
 }
