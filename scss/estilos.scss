@@ -13,17 +13,27 @@ outlast:darkgreen
 
 
 
+
 @for $i from 1 through 5{
     h#{$i}
     {
-     color: darken( #fad0f3, $i*20);   
+    color: darken( #ffffff, $i*20);   
     }
 } 
 
-/* body */
-    
+html{
+    font-family: 'Roboto', sans-serif;
+
+    #integra{
+        color: $fontcolor;
+        font-size: 200%;  
+        text-decoration: underline;
+    }
+}
+
+/* body */    
 body{
-    background-image: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 42%, rgba(143,0,255,1) 100%);
+    background-image: linear-gradient(180deg, rgb(179, 41, 41) 0%, rgba(0,0,0,1) 42%, rgb(164, 77, 231) 100%);
     font-size: 120%;
     color:$fontcolor;
     
@@ -34,8 +44,7 @@ body{
         
     p {
         color: $fontcolor;
-        font-size: 160%;
-        
+        font-size: 160%;   
     }
 
     }
@@ -173,7 +182,7 @@ body{
 
 .encabezado-de-pagina
 {
-    background-image: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 42%, rgba(143,0,255,1) 100%);
+    background-image: linear-gradient(180deg, rgb(179, 41, 41) );
     font-size: 150%;
     display: grid;
     grid-template-areas: 
@@ -217,7 +226,7 @@ body{
         position: absolute;
         left: 40px;
         display: none;
-        background-image: linear-gradient(90deg, rgba(143,0,255,1) 0%, rgba(0,0,0,1) 42%, rgba(255,0,0,1) 100%);
+        background-image: linear-gradient(180deg, rgb(179, 41, 41) 0%, rgba(0,0,0,1) 42%, rgb(164, 77, 231) 100%);
         z-index: 100;
     
     li {
@@ -237,7 +246,7 @@ body{
 
 .pie-de-pagina
 {
-    background-image: linear-gradient(90deg, rgba(143,0,255,1) 0%, rgba(0,0,0,1) 42%, rgba(255,0,0,1) 100%);
+    background-image: linear-gradient(180deg rgb(82, 52, 105));
     color: snow;
     font-size: 120%;
     display: grid;
@@ -605,6 +614,7 @@ body{
             }
         }
     }
+    
 
         /* Logo 2 */
             .logo-dos{
@@ -627,8 +637,8 @@ body{
     /*Cuerpo index*/
 
 .cuerpo-index{
-    font-family: 'Acme', sans-serif;
 
+    
 
 .cuerpo-index__galeria{
         display: inline-block;
@@ -979,8 +989,40 @@ body{
 
 
 
+    #co{
 
+        .logint{   
+        width: 100%;
 
+        .logint__draxtos{
+            width: 25%;
+            float: left;
+            margin-right: 15px;
+        }
+
+        .logint__aylen{
+            width: 25%;
+            float: left;
+            margin-right: 15px;
+        }
+        
+        .logint__princess{
+            width: 25%;
+            float: left;
+            margin-right: 15px;
+        }
+
+        .logint__diego{
+            width: 25%;
+            float: left;
+            margin-right: 15px;
+        }
+
+        }
+        div.reset {
+            clear: both;
+            }
+        }
 
 
 
@@ -999,7 +1041,7 @@ body{
 
         .encabezado-de-pagina
         {
-            background-image: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 42%, rgba(143,0,255,1) 100%);
+            background-image: linear-gradient(180deg, rgb(179, 41, 41) 0%, rgba(0,0,0,1) 42%, rgb(164, 77, 231) 100%);
             font-size: 50px;
             height: 120px;
             display: grid;
@@ -1044,7 +1086,7 @@ body{
                 position: absolute;
                 left: 20px;
                 display: none;
-                background-image: linear-gradient(90deg, rgba(143,0,255,1) 0%, rgba(0,0,0,1) 42%, rgba(255,0,0,1) 100%);
+                background-image: linear-gradient(180deg, rgb(179, 41, 41) 0%, rgba(0,0,0,1) 42%, rgb(164, 77, 231) 100%);
                 z-index: 100;
             
             li {
@@ -1064,7 +1106,7 @@ body{
 
     .pie-de-pagina
 {
-    background-image: linear-gradient(90deg, rgba(143,0,255,1) 0%, rgba(0,0,0,1) 42%, rgba(255,0,0,1) 100%);
+    background-image: linear-gradient(180deg, rgb(179, 41, 41) 0%, rgba(0,0,0,1) 42%, rgb(164, 77, 231) 100%);
     color: snow;
     height: 120px;
     display: grid;
@@ -1082,6 +1124,7 @@ body{
     border-color: snow;
     color: $fontcolor;
     font-family: 'Reenie Beanie', cursive;
+    width: 500px;
     font-size: 20px;
     column-width: 1px;
 
@@ -1093,7 +1136,7 @@ body{
         background-color: rgb(31, 30, 30);
         color: $fontcolor;
         font-family: 'Reenie Beanie', cursive;
-        font-size: 20px;
+        font-size: 35px;
     }
     
     label{
@@ -1259,7 +1302,7 @@ a.cuerpo-index__galeria{
     @media(max-width: 1024px){
         .encabezado-de-pagina
         {
-            background-image: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 42%, rgba(143,0,255,1) 100%);
+            background-image: linear-gradient(180deg, rgb(179, 41, 41) 0%, rgba(0,0,0,1) 42%, rgb(164, 77, 231) 100%);
             font-size: 40px;
             height: 120px;
             display: grid;
@@ -1304,7 +1347,7 @@ a.cuerpo-index__galeria{
                 position: absolute;
                 left: 20px;
                 display: none;
-                background-image: linear-gradient(90deg, rgba(143,0,255,1) 0%, rgba(0,0,0,1) 42%, rgba(255,0,0,1) 100%);
+                background-image: linear-gradient(180deg, rgb(179, 41, 41) 0%, rgba(0,0,0,1) 42%, rgb(164, 77, 231) 100%);
                 z-index: 100;
             
             li {
@@ -1324,7 +1367,7 @@ a.cuerpo-index__galeria{
 
     .pie-de-pagina
 {
-    background-image: linear-gradient(90deg, rgba(143,0,255,1) 0%, rgba(0,0,0,1) 42%, rgba(255,0,0,1) 100%);
+    background-image: linear-gradient(180deg, rgb(179, 41, 41) 0%, rgba(0,0,0,1) 42%, rgb(164, 77, 231) 100%);
     color: snow;
     height: 120px;
     font-size: 25px;
@@ -1516,7 +1559,7 @@ a.cuerpo-index__galeria{
         
         .encabezado-de-pagina
         {
-            background-image: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 42%, rgba(143,0,255,1) 100%);
+            background-image: linear-gradient(180deg, rgb(179, 41, 41) 0%, rgba(0,0,0,1) 42%, rgb(164, 77, 231) 100%);
             font-size: 40px;
             height: 120px;
             display: grid;
@@ -1561,7 +1604,7 @@ a.cuerpo-index__galeria{
                 position: absolute;
                 left: 20px;
                 display: none;
-                background-image: linear-gradient(90deg, rgba(143,0,255,1) 0%, rgba(0,0,0,1) 42%, rgba(255,0,0,1) 100%);
+                background-image: linear-gradient(180deg, rgb(179, 41, 41) 0%, rgba(0,0,0,1) 42%, rgb(164, 77, 231) 100%);
                 z-index: 100;
             
             li {
@@ -1581,7 +1624,7 @@ a.cuerpo-index__galeria{
 
     .pie-de-pagina
 {
-    background-image: linear-gradient(90deg, rgba(143,0,255,1) 0%, rgba(0,0,0,1) 42%, rgba(255,0,0,1) 100%);
+    background-image: linear-gradient(180deg, rgb(179, 41, 41) 0%, rgba(0,0,0,1) 42%, rgb(164, 77, 231) 100%);
     color: snow;
     height: 120px;
     font-size: 20px;
@@ -1601,6 +1644,7 @@ a.cuerpo-index__galeria{
     color: $fontcolor;
     font-family: 'Reenie Beanie', cursive;
     font-size: 20px;
+    width: 350px;
     column-width: 1px;
 
     }
@@ -1674,7 +1718,20 @@ a.cuerpo-index__galeria{
         grid-area:slogan;
         font-size: 20px;
     }
-
+    .modal-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        pointer-events: auto;
+        background-color: rgb(43, 43, 43);
+        background-clip: padding-box;
+        border: 1px solid rgba(233, 11, 11, 0.2);
+        border-radius: 0.3rem;
+        outline: 0;
+        max-height: 90%;
+    }
+    
 
 
 
@@ -1768,6 +1825,8 @@ a.cuerpo-index__galeria{
 }
 }
 
+
+
 }
 #botonClose{
     width: 30px;
@@ -1777,29 +1836,7 @@ a.cuerpo-index__galeria{
     background-color: rgb(31,30,30);   
     }
     
-    .modal-fullscreen-md-down {
-        width: 80%;
-        max-width: none;
-        height: 100%;
-        margin: 0;
-        }
-        .modal-fullscreen-md-down .modal-content {
-        height: 80%;
-        width: 80%;
-        border: 0;
-        border-radius: 0;
-        }
-        .modal-fullscreen-md-down .modal-header {
-        border-radius: 0;
-        }
-        .modal-fullscreen-md-down .modal-body {
-        overflow-y: auto;
-        width: 50%;
-        }
-        .modal-fullscreen-md-down .modal-footer {
-        border-radius: 0;
-        }
-
+    
 } 
 
 
@@ -1809,7 +1846,7 @@ a.cuerpo-index__galeria{
     
     .encabezado-de-pagina
     {
-        background-image: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 42%, rgba(143,0,255,1) 100%);
+        background-image: linear-gradient(180deg, rgb(179, 41, 41) 0%, rgba(0,0,0,1) 42%, rgb(164, 77, 231) 100%);
         font-size: 10px;
         height: 60px;
         display: grid;
@@ -1854,7 +1891,7 @@ a.cuerpo-index__galeria{
             position: absolute;
             left: 10px;
             display: none;
-            background-image: linear-gradient(90deg, rgba(143,0,255,1) 0%, rgba(0,0,0,1) 42%, rgba(255,0,0,1) 100%);
+            background-image: linear-gradient(180deg, rgb(179, 41, 41) 0%, rgba(0,0,0,1) 42%, rgb(164, 77, 231) 100%);
             z-index: 100;
         
         li {
@@ -1874,7 +1911,7 @@ a.cuerpo-index__galeria{
 
 .pie-de-pagina
 {
-background-image: linear-gradient(90deg, rgba(143,0,255,1) 0%, rgba(0,0,0,1) 42%, rgba(255,0,0,1) 100%);
+background-image: linear-gradient(180deg, rgb(179, 41, 41) 0%, rgba(0,0,0,1) 42%, rgb(164, 77, 231) 100%);
 color: snow;
 height: 60px;
 font-size: 10px;
@@ -1983,6 +2020,31 @@ color: $fontcolor;
 font-size: 10px;
 
 }
+
+#botonClose{
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    color: $fontcolor;
+    background-color: rgb(31,30,30);   
+    }
+    
+    .modal-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        pointer-events: auto;
+        background-color: rgb(43, 43, 43);
+        background-clip: padding-box;
+        border: 1px solid rgba(233, 11, 11, 0.2);
+        border-radius: 0.3rem;
+        outline: 0;
+        max-height: 90%;
+    }
+    
+  
+
 }
 /* Logo 2 */
 .logo-dos{
@@ -2064,35 +2126,6 @@ max-width: 340px;
 }
 
 }
-#botonClose{
-width: 20px;
-height: 20px;
-font-size: 10px;
-color: $fontcolor;
-background-color: rgb(31,30,30);   
-}
 
-.modal-fullscreen-md-down {
-    width: 80%;
-    max-width: none;
-    height: 100%;
-    margin: 0;
-    }
-    .modal-fullscreen-md-down .modal-content {
-    height: 80%;
-    width: 80%;
-    border: 0;
-    border-radius: 0;
-    }
-    .modal-fullscreen-md-down .modal-header {
-    border-radius: 0;
-    }
-    .modal-fullscreen-md-down .modal-body {
-    overflow-y: auto;
-    width: 50%;
-    }
-    .modal-fullscreen-md-down .modal-footer {
-    border-radius: 0;
-    }
 
 }
