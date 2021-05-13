@@ -6,9 +6,9 @@ ow:orange,
 little2:brown,
 nssot:cyan,
 re8:red,
-lis:blue,
+lis:rgb(255, 0, 212),
 little1:yellow,
-outlast:darkgreen
+outlast:rgb(98, 224, 98)
 );
 
 
@@ -17,7 +17,7 @@ outlast:darkgreen
 @for $i from 1 through 5{
     h#{$i}
     {
-    color: darken( #2600ff, $i*20);   
+    color: lighten( #aca6cc, $i*20);   
     }
 } 
 
