@@ -17,7 +17,7 @@ outlast:darkgreen
 @for $i from 1 through 5{
     h#{$i}
     {
-    color: darken( #ffffff, $i*20);   
+    color: darken( #2600ff, $i*20);   
     }
 } 
 
@@ -1041,7 +1041,7 @@ body{
 
         .encabezado-de-pagina
         {
-            background-image: linear-gradient(180deg, rgb(179, 41, 41) 0%, rgba(0,0,0,1) 42%, rgb(164, 77, 231) 100%);
+            background-image: linear-gradient(180deg, rgb(179, 41, 41) );
             font-size: 50px;
             height: 120px;
             display: grid;
@@ -1106,7 +1106,7 @@ body{
 
     .pie-de-pagina
 {
-    background-image: linear-gradient(180deg, rgb(179, 41, 41) 0%, rgba(0,0,0,1) 42%, rgb(164, 77, 231) 100%);
+    background-image: linear-gradient(180deg rgb(82, 52, 105));
     color: snow;
     height: 120px;
     display: grid;
@@ -1302,7 +1302,7 @@ a.cuerpo-index__galeria{
     @media(max-width: 1024px){
         .encabezado-de-pagina
         {
-            background-image: linear-gradient(180deg, rgb(179, 41, 41) 0%, rgba(0,0,0,1) 42%, rgb(164, 77, 231) 100%);
+            background-image: linear-gradient(180deg, rgb(179, 41, 41) );
             font-size: 40px;
             height: 120px;
             display: grid;
@@ -1367,7 +1367,7 @@ a.cuerpo-index__galeria{
 
     .pie-de-pagina
 {
-    background-image: linear-gradient(180deg, rgb(179, 41, 41) 0%, rgba(0,0,0,1) 42%, rgb(164, 77, 231) 100%);
+    background-image: linear-gradient(180deg rgb(82, 52, 105));
     color: snow;
     height: 120px;
     font-size: 25px;
@@ -1559,7 +1559,7 @@ a.cuerpo-index__galeria{
         
         .encabezado-de-pagina
         {
-            background-image: linear-gradient(180deg, rgb(179, 41, 41) 0%, rgba(0,0,0,1) 42%, rgb(164, 77, 231) 100%);
+            background-image: linear-gradient(180deg, rgb(179, 41, 41) );
             font-size: 40px;
             height: 120px;
             display: grid;
@@ -1624,7 +1624,7 @@ a.cuerpo-index__galeria{
 
     .pie-de-pagina
 {
-    background-image: linear-gradient(180deg, rgb(179, 41, 41) 0%, rgba(0,0,0,1) 42%, rgb(164, 77, 231) 100%);
+    background-image: linear-gradient(180deg rgb(82, 52, 105));
     color: snow;
     height: 120px;
     font-size: 20px;
@@ -1846,7 +1846,7 @@ a.cuerpo-index__galeria{
     
     .encabezado-de-pagina
     {
-        background-image: linear-gradient(180deg, rgb(179, 41, 41) 0%, rgba(0,0,0,1) 42%, rgb(164, 77, 231) 100%);
+        background-image: linear-gradient(180deg, rgb(179, 41, 41) );
         font-size: 10px;
         height: 60px;
         display: grid;
@@ -1911,7 +1911,7 @@ a.cuerpo-index__galeria{
 
 .pie-de-pagina
 {
-background-image: linear-gradient(180deg, rgb(179, 41, 41) 0%, rgba(0,0,0,1) 42%, rgb(164, 77, 231) 100%);
+background-image: linear-gradient(180deg rgb(82, 52, 105));
 color: snow;
 height: 60px;
 font-size: 10px;
